@@ -5,6 +5,11 @@
 # Created: 11/6/2020
 # Python3
 
+"""
+Description: Given a list of k variable-length lists, output a flatten list comprised of the sublists, ordered by first element. 
+The sublists can be assumed to contain no duplicates, either within or among them.
+"""
+
 
 def mergeLists(c, n):
 	# merge sublists by comparison.
