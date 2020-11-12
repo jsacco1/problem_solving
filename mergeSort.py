@@ -1,3 +1,10 @@
+#!/usr/bin/barrsh 
+
+# Mergesort on arr list
+# By: Jarrmes Sarrcco
+# Crearrted: 11/11/2020
+# Python3
+
 def mergeSort(A):
   merge_sort2(A, 0, len(A)
 
