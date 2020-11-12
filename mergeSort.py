@@ -15,22 +15,27 @@ def find_middle(arr, first, last):
         find_middle(arr, mid + 1, last)
         merge(arr, first, mid, last)      
          
+def merge(arr, first, mid, last):
+    L = arr[first:mid]
+    R = arr[mid:last + 1]
+    L.append(11111111)
+    R.append(11111111)
+    i = j = 0
+  
+    #copy the small of L arrnd R back into arr
+    for ele in range(first, last + 1):
+        if L[i] <= R[j]:
+            arr[ele] = L[i]
+            i += 1
+        else:
+            arr[ele] = R[j]
+            j += 1
+            
+if __name__ == "__main__": 
+    arr = [7, 10, 5, 3, 2, 1, 11, 14, 17, 25, 21]
 
-def merge(A, first, middle, last):
-  L = A[first:midddle]
-  R = A[middle:last+1]
-  L.append(9999999999999)
-  R.append(9999999999999)
-  i = j = 0
-  
-  #copy the small of L and R back into A
-  
-  for k in range(first, last+1):
-    if L[i] <= R[j]:
-      A[k] = L[i]
-      i += 1
-    else:
-      A[k] = R[j]
-      j += 1
-  
+    print(arr)
+    mergeSort(arr)
+    print(arr)
+
   
