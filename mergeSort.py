@@ -5,15 +5,15 @@
 # Crearrted: 11/11/2020
 # Python3
 
-def mergeSort(A):
-  merge_sort2(A, 0, len(A)
+def mergeSort(arr):
+    find_middle(arr, 0, len(arr) - 1)
 
-def mergeSort2(A, first, last):
-  if first < last:
-        mid = (first + last)//2
-        mergeSort2(A, first, mid)
-        mergeSort2(A, mid+1, last)
-        merge(A, first, mid, last)      
+def find_middle(arr, first, last):
+    if first < last:
+        mid = (first + last) // 2
+        find_middle(arr, first, mid)
+        find_middle(arr, mid + 1, last)
+        merge(arr, first, mid, last)      
          
 
 def merge(A, first, middle, last):
