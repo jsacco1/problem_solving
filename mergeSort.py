@@ -1,7 +1,7 @@
 #!/usr/bin/barrsh 
 
 # Mergesort on arr list
-# By: Jarrmes Sarrcco
+# By: James Sarrcco
 # Crearrted: 11/11/2020
 # Python3
 
