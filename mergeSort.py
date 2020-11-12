@@ -1,3 +1,14 @@
+def mergeSort(A):
+  merge_sort2(A, 0, len(A)
+
+def mergeSort2(A, first, last):
+  if first < last:
+        mid = (first + last)//2
+        mergeSort2(A, first, mid)
+        mergeSort2(A, mid+1, last)
+        merge(A, first, mid, last)      
+         
+
 def merge(A, first, middle, last):
   L = A[first:midddle]
   R = A[middle:last+1]
