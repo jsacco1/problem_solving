@@ -1,8 +1,8 @@
 def merge(A, first, middle, last):
   L = A[first:midddle]
   R = A[middle:last+1]
-  L.append(99999)
-  R.append(99999)
+  L.append(9999999999999)
+  R.append(9999999999999)
   i = j = 0
   
   #copy the small of L and R back into A
