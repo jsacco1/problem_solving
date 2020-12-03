@@ -1,9 +1,12 @@
-#!/usr/bin/barrsh 
+#!/usr/bin/bash
 
-# Mergesort on arr list
-# By: James Sarrcco
-# Crearrted: 11/11/2020
+"""
+Description: Mergesort on arr list
+
+# By: James Sacco
+# Created: 11/11/2020
 # Python3
+"""
 
 def mergeSort(arr):
     find_middle(arr, 0, len(arr) - 1)
