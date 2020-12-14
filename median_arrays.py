@@ -13,10 +13,6 @@ def get_median(arr1, arr2):
     '''
     Combine arrays and get median of resultant array.
     '''
-    # arr1 = list(map(int, input().rstrip().split()))
-    # arr2 = list(map(int, input().rstrip().split()))
-
-
     arr1.extend(arr2)
     res = sorted(arr1)
     l = len(res)
