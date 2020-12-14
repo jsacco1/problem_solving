@@ -9,10 +9,13 @@ date: 2020-12-11
 
 import sys
 
-def main(arr1, arr2):
+def get_median(arr1, arr2):
     '''
     Combine arrays and get median of resultant array.
     '''
+    # arr1 = list(map(int, input().rstrip().split()))
+    # arr2 = list(map(int, input().rstrip().split()))
+
 
     arr1.extend(arr2)
     res = sorted(arr1)
@@ -22,17 +25,17 @@ def main(arr1, arr2):
         print(res[median])
     elif l % 2 == 0:
         print( 
-            (res[(l-1)//2 + 1] + res[(l-1)//2])/2
+            (int(res[(l-1)//2 + 1]) + int(res[(l-1)//2]))/2
         )
 
 
 if __name__ == "__main__":
-    if len(sys.argv) == 3:
-        arr1 = [int(i) for i in input().split()]
-        arr2 = [int(i) for i in input().split()]
-        main(arr1 = arr1,arr2 = arr2)
-
-
-
-
-
+    # parse input arrays
+    if len(sys.argv) >= 3:
+        arr1 = sys.argv[1].split(',')
+        arr2 = sys.argv[2].split(',')
+        print("input arrays: ", arr1, arr2)
+        get_median(arr1 = arr1, arr2 = arr2)
+    else:
+        print("Input required arguments: array1, array2.\nExample: python3 median_arrays.py 1,2 3,4")
+    
